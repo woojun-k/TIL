@@ -149,3 +149,41 @@ do {
     - `break label;`
     - `Continue label;`
 
+<br>
+
+# Git
+
+## Commands
+
+- Start a working area
+    - **`clone`**
+    - **`init`**
+
+- work on the current change
+    - **`add`**
+    - `mv`
+    - `restore`
+    - `rm`
+
+- examine the history and state
+    - `bisect`
+    - **`diff`**
+    - `grep`
+    - **`log`**
+    - `show`
+    - **`status`**
+
+- grow, mark and tweak common history
+    - `backfill`
+    - **`branch`**
+    - **`commit`**
+    - **`merge`**
+    - `rebase`
+    - **`reset`**
+    - **`switch`**
+    - `tag`
+
+- collaborate
+    - `fetch`
+    - **`pull`**
+    - **`push`**
