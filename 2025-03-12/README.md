@@ -22,9 +22,16 @@
 
 |메서드|설명|
 |---|---|
-|void setComment(String comment)||
-|void setDomain(String domain)||
-|void setMaxAge(int expiry)||
+|void setComment(String comment)|쿠키에 대한 설명 설정|
+|void setDomain(String domain)|쿠키의 유효한 도메인 설정|
+|void setMaxAge(int expiry)|쿠키 유효기간 설정|
+|void setPath(String path)|쿠키 유효 디렉토리 설정|
+|void setValue(String value)|쿠키 값 설정|
+|String getComment()|쿠키 설명 반환|
+|String getDomain()|쿠키 유효 도메인 반환|
+|int getMaxAge()|쿠키 유효기간 반환|
+|String getPath()|쿠키 유효 디렉토리 반환|
+|String getValue()|쿠키 값 반환|
 
 
 ### Session
@@ -40,6 +47,13 @@
 
 |메서드|설명|
 |---|---|
-|void setAttribute(String name, Object value)||
-|void setMaxInactiveInterval(int interval)||
+|void setAttribute(String name, Object value)|session에 지정한 name에 해당하는 객체를 추가|
+|void setMaxInactiveInterval(int interval)|사용자가 다음 요청을 보낼 때 까지 세션을 유지하는 최대시간(sec) 설정|
+|void invalidate()|현재 세션을 없애고, 속성도 삭제한다|
+|String getId()|현재 세션의 고유 id를 반환|
+|long getLastAccessTime()|현재 세션에 클라이언트가 마지막으로 요청을 보낸 시간을 반환(long)|
+|Object getAttribute(String name)|name에 해당하는 속성값 반환, 반환형이 Object 임에 유의|
+|long getCreationTime()|세션이 만들어진 시간 반환|
+|void removeAttribute(String name)|세션에서 지정한 이름의 객체를 제거|
+|Enumeration getAttributeNames()|세션에서 모든 객체의 이름을 Enumeration형으로 반환|
 
